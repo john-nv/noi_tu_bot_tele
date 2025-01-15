@@ -20,7 +20,7 @@ const helpCommand = `📚***Hướng dẫn***📚
 
 bot.on('message', async (msg) => {
     const { text, chat } = msg;
-    // console.log(msg);
+    console.log(text);
     // console.log(text);
     try {
 
