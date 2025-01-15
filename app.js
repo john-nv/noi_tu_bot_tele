@@ -1,9 +1,19 @@
+const express = require('express')
+const app = express()
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(process.env.TOKEN_BOT_TELEGRAM, { polling: true });
 const axios = require('axios');
 
-// const PORT = process.env.PORT || 8888;
+const PORT = process.env.PORT || 8888;
+
+app.use(express.urlencoded({ extended: true }))
+app.use(express.static('public'))
+
+app.get('/', (req, res) => { res.sendFile(__dirname + '/public/') })
+app.listen(process.env.PORT, () => {
+    console.log(`start port ${process.env.PORT}`)
+})
 
 const helpCommand = `📚***Hướng dẫn***📚
 
