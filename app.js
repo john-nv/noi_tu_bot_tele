@@ -3,7 +3,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(process.env.TOKEN_BOT_TELEGRAM, { polling: true });
 const axios = require('axios');
 
-const PORT = process.env.PORT || 8888;
+// const PORT = process.env.PORT || 8888;
 
 const helpCommand = `📚***Hướng dẫn***📚
 
