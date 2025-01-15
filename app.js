@@ -7,7 +7,7 @@ const axios = require('axios');
 
 const helpCommand = `📚***Hướng dẫn***📚
 
-***Bước 1:*** Tạo/Thêm bot vào nhóm để chơi cùng bạn bè
+***Bước 1:*** Thêm bot vào nhóm để chơi cùng bạn bè
 
 ***HẾT !*** 
 
